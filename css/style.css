@@ -60,7 +60,7 @@ body {
     width: 50px;
     background-color: var(--skin-color);
     position: absolute;
-    margin-top: 30px;
+    margin-top: 35px;
 }
 .about-me-title h2::after {
     content: '';
@@ -68,8 +68,8 @@ body {
     width: 25px;
     background-color: var(--skin-color);
     position: absolute;
-    margin-top: 35px;
-    margin-left: -148px;
+    margin-top: 42px;
+    margin-left: -153px;
 }
 .info-item p,
 .skill-item h5 {
@@ -149,7 +149,7 @@ body {
     width: 50px;
     background-color: var(--skin-color);
     position: absolute;
-    margin-top: 30px;
+    margin-top: 35px;
 }
 .service-title h2::after {
     content: '';
@@ -157,8 +157,8 @@ body {
     width: 25px;
     background-color: var(--skin-color);
     position: absolute;
-    margin-top: 35px;
-    margin-left: -111px;
+    margin-top: 42px;
+    margin-left: -117px;
 }
 .icon-wrapper {
     width: 60px;
@@ -182,6 +182,23 @@ body {
 }
 
 /* Portfolio */
+.portfolio-title h2::before {
+    content: '';
+    height: 4px;
+    width: 50px;
+    background-color: var(--skin-color);
+    position: absolute;
+    margin-top: 35px;
+}
+.portfolio-title h2::after {
+    content: '';
+    height: 4px;
+    width: 25px;
+    background-color: var(--skin-color);
+    position: absolute;
+    margin-top: 42px;
+    margin-left: -132px;
+}
 .image-card-project {
     position: relative;
 }
@@ -217,10 +234,44 @@ body {
     font-weight: 500;
     font-size: 25px;
 }
+
+/* Contact */
+.contact-title h2::before {
+    content: '';
+    height: 4px;
+    width: 50px;
+    background-color: var(--skin-color);
+    position: absolute;
+    margin-top: 35px;
+}
+.contact-title h2::after {
+    content: '';
+    height: 4px;
+    width: 25px;
+    background-color: var(--skin-color);
+    position: absolute;
+    margin-top: 42px;
+    margin-left: -186px;
+}
+.contact .contact-title,
+.contact .contact-sub-title {
+    color: var(--text-black-900);
+}
   
 /* media query */
 @media (min-width: 992px) and (max-width: 1200px) {
-
+    .about-me-title h2::after {
+        margin-left: -144px;
+    }
+    .service-title h2::after {
+        margin-left: -110px;
+    }
+    .portfolio-title h2::after {
+        margin-left: -124px;
+    }
+    .contact-title h2::after {
+        margin-left: -176px;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991.98px) {
@@ -232,5 +283,56 @@ body {
     }
     .home-info p {
         font-size: 10px !important;
+    }
+
+    .service-title h2::after {
+        margin-left: -103px;
+    }
+    .portfolio-title h2::after {
+        margin-left: -116px;
+    }
+    .contact-title h2::after {
+        margin-left: -164px;
+    }
+    .about-me-title h2::after {
+        margin-left: -135px;
+    }
+    .portfolio-sidebar {
+        font-size: 15px !important;
+    }
+}
+@media (min-width: 600px) and (max-width: 767.9px) {
+    .about-me-title h2::after {
+        margin-left: -128px;
+    }
+    .service-title h2::after {
+        margin-left: -97px;
+    }
+    .portfolio-title h2::after {
+        margin-left: -110px;
+    }
+    .contact-title h2::after {
+        margin-left: -155px;
+    }
+    .home-info {
+        margin-top: 3rem;
+    }
+    #hire-me-btn {
+        width: 100%;
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+    .download-cv,
+    .hire-me {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    .sidebar-section {
+        display: none;
+    }
+    .info-item p, 
+    .skill-item h5 {
+        font-size: 20px !important;
     }
 }
