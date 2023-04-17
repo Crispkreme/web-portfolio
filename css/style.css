@@ -1,0 +1,236 @@
+:root {
+    --bg-black-900: #f2f2fc;
+    --bg-black-100: #fdf9ff;
+    --bg-black-50: #e8dfec;
+    --text-black-900: #302e4d;
+    --text-black-700: #504e70;
+    --skin-color: #ec1839;
+}
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Global variable */
+.main-container {
+    background-color: var(--bg-black-100);
+}
+
+/* sidebar */
+#side_nav {
+    min-width: 250px;
+    max-width: 250px;
+    transition: all 0.3s;
+}
+.sidebar li.active {
+    background-color: var(--bg-black-50);
+    border-radius: 8px;
+}
+.sidebar li.active a,
+.sidebar li.active a:hover {
+    color: #000;
+}
+.sidebar li a {
+    color: var(--bg-black-900);
+}
+
+/* Home styles */
+.hello span,
+#hire-me-btn,
+.about-text span,
+.typing {
+    color: var(--skin-color);
+}
+.home-info p,
+.about-text-description {
+ color: var(--text-black-700);
+}
+.home-img img {
+    width: 100%;
+}
+
+/* About me */
+.about-me-title h2::before {
+    content: '';
+    height: 4px;
+    width: 50px;
+    background-color: var(--skin-color);
+    position: absolute;
+    margin-top: 30px;
+}
+.about-me-title h2::after {
+    content: '';
+    height: 4px;
+    width: 25px;
+    background-color: var(--skin-color);
+    position: absolute;
+    margin-top: 35px;
+    margin-left: -148px;
+}
+.info-item p,
+.skill-item h5 {
+    font-size: 12px !important;
+}
+.info-item p span a {
+    word-wrap: break-word;
+}
+#gitlab-progress-bar {
+    background-color: #ffc107 !important;
+}
+#github-progress-bar {
+    background-color: #9c27b0 !important;
+}
+#js-progress-bar {
+    background-color: #8bc34a !important;
+}
+#php-progress-bar {
+    background-color: #009688 !important;
+}
+#laravel-progress-bar {
+    background-color: #ff9800 !important;
+}
+#css-progress-bar {
+    background-color: #cddc39 !important;
+}
+#html-progress-bar {
+    background-color: #9e9e9e !important;
+}
+#bootstrap-progress-bar {
+    background-color: #e91e63 !important;
+}
+#mysql-progress-bar {
+    background-color: #673ab7 !important;
+}
+#react-progress-bar {
+    background-color: #03a9f4 !important;
+}
+.timeline-item {
+    position: relative;
+    padding-left: 37px;
+    padding-bottom: 50px;
+}
+.timeline-item:last-child {
+    padding-bottom: 0px; 
+}
+.timeline-item::before {
+    content: '';
+    width: 1px;
+    position: absolute;
+    height: 100%;
+    left: 7px;
+    top: 0;
+    background-color: var(--skin-color);
+}
+.timeline-item .circle-dot {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background-color: var(--skin-color);
+}
+.timeline-item .timeline-date,
+.timeline-item .timeline-text {
+    color: var(--text-black-700);
+}
+.timeline-item .timeline-title {
+    color: var(--text-black-900);
+}
+
+/* service */
+.service-title h2::before {
+    content: '';
+    height: 4px;
+    width: 50px;
+    background-color: var(--skin-color);
+    position: absolute;
+    margin-top: 30px;
+}
+.service-title h2::after {
+    content: '';
+    height: 4px;
+    width: 25px;
+    background-color: var(--skin-color);
+    position: absolute;
+    margin-top: 35px;
+    margin-left: -111px;
+}
+.icon-wrapper {
+    width: 60px;
+    height: 60px;
+    background-color: var(--skin-color);
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    font-size: 20px;
+    color: #fff;
+}
+
+.icon-wrapper:hover {
+    background-color: #fff;
+    border-radius: 0%;
+    color: var(--skin-color);
+}
+
+.icon-wrapper i {
+    font-size: 36px;
+    color: #333;
+}
+
+/* Portfolio */
+.image-card-project {
+    position: relative;
+}
+.image-card-project img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.card-img-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.card-text,
+.card-title {
+    overflow: hidden;
+}
+.image-card-project:hover .card-img-overlay {
+    height: 100%;
+}
+.portfolio .portfolio-heading h2 {
+    color: var(--text-black-900);
+    font-weight: 500;
+    font-size: 25px;
+}
+  
+/* media query */
+@media (min-width: 992px) and (max-width: 1200px) {
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    /* Styles for medium screens */
+    .my-profession,
+    .hello span,
+    .hello {
+        font-size: 15px !important;
+    }
+    .home-info p {
+        font-size: 10px !important;
+    }
+}
